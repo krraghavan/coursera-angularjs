@@ -8,9 +8,9 @@
   'use strict';
 
   angular.module("ShoppingCartApp", [])
-         .controller('ItemsToBuyController', ItemsToBuyController)
-         .controller('BoughtItemsController', BoughtItemsController)
-         .service('ItemsService', ItemsService);
+         .controller('ToBuyShoppingController', ItemsToBuyController)
+         .controller('AlreadyBoughtShoppingController', BoughtItemsController)
+         .service('ShoppingListCheckOffService', ItemsService);
 
   var randomString = function (len) {
     var text = "";
@@ -25,7 +25,7 @@
     return 'a' + text;
   };
 
-  ItemsToBuyController.$inject = ['ItemsService'];
+  ItemsToBuyController.$inject = ['ShoppingListCheckOffService'];
   function ItemsToBuyController(itemsService) {
     var me = this;
     me.itemsToBuy = itemsService.getItemsToBuy();
@@ -35,7 +35,7 @@
     }
   }
 
-  BoughtItemsController.$inject = ['ItemsService'];
+  BoughtItemsController.$inject = ['ShoppingListCheckOffService'];
   function BoughtItemsController(itemsService) {
     var me = this;
     me.boughtItems = itemsService.getBoughtItems();
