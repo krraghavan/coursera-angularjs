@@ -1,10 +1,13 @@
 <table>
   <thead>
     <tr>
-      <td style="width:30%">Name</td>
-      <td style="width:20%">Short Name</td>
-      <td style="width:50%">Description</td>
+      <td class="shortName">Name</td>
+      <td class="shortName">Short Name</td>
+      <td class="shortName">Description</td>
     </tr>
   </thead>
-  <tr ng-repeat="menuItem in $ctrl.menuItems"><td>{{menuItem.name}}</td><td>{{menuItem.short_name}}</td><td>{{menuItem.description}}</td></tr>
+  <tr ng-repeat="menuItem in $ctrl.menuItems">
+    <td class="name">{{menuItem.name}}</td>
+    <td class="shortName">{{menuItem.short_name}}</td>
+    <td class="description">{{menuItem.description}}</td></tr>
 </table>

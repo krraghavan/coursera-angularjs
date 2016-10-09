@@ -50,3 +50,31 @@ input[type="text"] {
     transform: rotate(360deg);
   }
 }
+
+table {
+  border:1px solid #ccc;
+}
+
+tr,td {
+  border:1px solid #ccc;
+}
+
+td.description, td.name {
+  text-align: left;
+}
+
+td.description {
+  width:50%;
+}
+
+td.name {
+  width:30%;
+}
+
+td.shortName {
+  width:20%;
+}
+
+td.shortName {
+  text-align: center;
+}
