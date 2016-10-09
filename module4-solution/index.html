@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" ng-app="menuapp">
+<head>
+  <title>Module 4 Solution</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+</div>
+
+<ui-view></ui-view>
+
+<script src="lib/angular.js"></script>
+<script src="lib/angular-ui-router.min.js"></script>
+
+<!-- Modules -->
+<script src="src/menuapp/menuapp.module.js"></script>
+<script src="src/menuapp/data.module.js"></script>
+
+<!-- Components/Controllers -->
+<script src="src/menuapp/home.component.js"></script>
+<script src="src/menuapp/categories.component.js"></script>
+<script src="src/menuapp/items.component.js"></script>
+<script src="src/menuapp/categories.controller.js"></script>
+<script src="src/menuapp/categoryDetail.controller.js"></script>
+
+<!-- Routes -->
+<script src="src/routes.js"></script>
+
+<!-- Services -->
+<script src="src/menuapp/menudata.service.js"></script>
+
+<!-- Libraries -->
+
+</body>
+</html>
